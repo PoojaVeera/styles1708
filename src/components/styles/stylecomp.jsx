@@ -8,13 +8,19 @@ import {
   BUTTONF,
   BUTTONG,
   SIN,
-  INPUTBOX,
+  BAR,
 } from "./stylecomps.js";
 
 function Mypage() {
   return (
     <div>
-      <HEAD>header</HEAD>
+      <HEAD>
+        <img src="https://etimg.etb2bimg.com/photo/93130023.cms" alt="Sedin" />
+        <h3>
+          Dashboard &nbsp; Apps &nbsp; Pages &nbsp; Components &nbsp;
+          Collections
+        </h3>
+      </HEAD>
       <Immg
         src="https://img.freepik.com/premium-vector/woman-working-computer-colorful-vector-concept-cartoon-flat-style-illustration-office-clerk-happy-girl-sitting-desk-with-laptop-female-character-freelancer-secretary-businesswoman_311563-586.jpg?w=2000"
         alt="welcome"
@@ -23,17 +29,21 @@ function Mypage() {
       <FORM>
         <SIN>SIGN IN</SIN>
         <br />
+        <p>welcome back please sign in </p>
+        <br></br>
         <form>
-          <label>Email address</label>
+          <label>
+            <b>Email address</b>
+          </label>
           <br />
-          <INPUTBOX>
-            <input type="email" placeholder="yourname@yourmail.com" />
-          </INPUTBOX>
+          <input type="email" placeholder="yourname@yourmail.com" />
           <br />
-          <p>Password</p>
-          <INPUTBOX>
-            <input type="password" placeholder="enter your password"></input>
-          </INPUTBOX>
+          <p>
+            <b>Password</b>&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="">Forgot password?</a>
+          </p>
+          <input type="password" placeholder="enter your password"></input>
+
           <br />
         </form>
         <br />
@@ -44,6 +54,9 @@ function Mypage() {
         <br />
         <BUTTONF>Sign in with facebook</BUTTONF>
         <br />
+        <p>
+          Don't have an account? &emsp; <a href="/">create a account</a>
+        </p>
       </FORM>
       <FOOT>Page created by pooja veeranki</FOOT>
     </div>
