@@ -1,4 +1,6 @@
 import React from "react";
+import "./compstyle.css";
+
 import {
   HEAD,
   Immg,
@@ -12,8 +14,8 @@ import {
 
 function Mypage() {
   return (
-    <div>
-      <HEAD>
+    <div className="container">
+      <HEAD className="head">
         <img src="https://etimg.etb2bimg.com/photo/93130023.cms" alt="Sedin" />
         <h3>
           Dashboard &nbsp; Apps &nbsp; Pages &nbsp; Components &nbsp;

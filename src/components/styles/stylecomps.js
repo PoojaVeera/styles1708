@@ -40,6 +40,11 @@ export const FORM = styling.div`
     text-align:justify;
     font-size: 12px;
     font-family:sans serif;
+    background-color:pink;
+    @media $(Devices.laptop) and (min-width: 480px){
+      
+      background-color:green;
+    }
     `;
 export const BUTTONG = styling.div`
     color: purple;
