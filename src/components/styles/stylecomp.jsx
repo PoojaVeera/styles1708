@@ -9,7 +9,7 @@ import {
   BUTTONG,
   SIN,
   BAR,
-} from "./stylecomps.js";
+} from "./Stylecomps.js";
 
 function Mypage() {
   return (

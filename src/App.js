@@ -1,5 +1,5 @@
 import "./App.css";
-import Mypage from "./components/styles/stylecomp.jsx";
+import Mypage from "./components/styles/Stylecomp.jsx";
 
 function App() {
   return (
