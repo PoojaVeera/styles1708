@@ -1,10 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Mypage from "./components/styles/stylecomp.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Mypage />
     </div>
   );

@@ -9,7 +9,7 @@ import {
   BUTTONG,
   SIN,
   INPUTBOX,
-} from "./stylecomp.js";
+} from "./stylecomps.js";
 
 function Mypage() {
   return (
@@ -49,4 +49,4 @@ function Mypage() {
     </div>
   );
 }
-export default Mypage();
+export default Mypage;
