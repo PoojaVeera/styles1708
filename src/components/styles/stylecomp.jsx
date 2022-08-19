@@ -8,7 +8,6 @@ import {
   BUTTONF,
   BUTTONG,
   SIN,
-  BAR,
 } from "./Stylecomps.js";
 
 function Mypage() {
