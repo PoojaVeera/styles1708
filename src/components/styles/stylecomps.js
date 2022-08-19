@@ -14,8 +14,6 @@ export const HEAD = styling.header`
       position: absolute;
     }
   `;
-export const BAR = styling.div`
-  background: transparent;`;
 
 export const Immg = styling.img`
     position:fixed;
@@ -40,7 +38,6 @@ export const FORM = styling.div`
     text-align:justify;
     font-size: 12px;
     font-family:sans serif;
-    background-color:pink;
     @media $(Devices.laptop) and (min-width: 480px){
       
       background-color:green;
