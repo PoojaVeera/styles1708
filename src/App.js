@@ -1,10 +1,10 @@
 import "./App.css";
-import Mypage from "./components/styles/Stylecomp.jsx";
+import MyPage from "./components/styles/MyPage.js";
 
 function App() {
   return (
     <div className="App">
-      <Mypage />
+      <MyPage />
     </div>
   );
 }
