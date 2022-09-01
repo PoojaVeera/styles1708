@@ -6,7 +6,7 @@ right:0;
 left:0;
 align-items: center;
 height: 10%;
-display:block;
+display:flex;
 padding: 0px;
 justify-content: flex-start;
 box-sizing:border-box;  
@@ -26,14 +26,10 @@ padding:10px;
 text-align:center;
 float:left;`;
 export const NAVBAR = styling.nav`
-position:fixed;
-top:2%;
-left:22%;
+
 `;
 export const ICONS = styling.div`
-position: fixed;
-right:1%;
-top:2%;
+
 padding:10px;
 `;
 export const DOAR = styling.div`;

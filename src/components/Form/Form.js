@@ -49,7 +49,9 @@ export const Form = () => {
               <PASSWORD>
                 Password
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                <a href="">Forgot password?</a>
+                <a href="https://doar-react.netlify.app/signin">
+                  Forgot password?
+                </a>
               </PASSWORD>
               <INBOXpass
                 type="password"
@@ -58,13 +60,18 @@ export const Form = () => {
                 values={frmk.values.password}
                 onChange={frmk.handleChange}
               />
+              <br></br>
             </form>
             <BUTTONSI>SIGN IN</BUTTONSI>
+            --------------------------------0R--------------------------------
             <ButtonG>Sign in with Google</ButtonG>
             <br />
             <BUTTONF>Sign in with facebook</BUTTONF>
             <p>
-              Don't have an account? &emsp; <a href="/">create a account</a>
+              Don't have an account? &emsp;{" "}
+              <a href="https://doar-react.netlify.app/signin">
+                create a account
+              </a>
             </p>
           </FORM>
         </WELCOME>

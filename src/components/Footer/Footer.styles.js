@@ -14,9 +14,12 @@ height:20%`;
 export const SUBFOOT1 = styling.div`
 position:fixed;
 right:10%;
+text-decoration:none;
 `;
 export const SUBFOOT2 = styling.div`
 position:fixed;
 left:0%;
 right:80%;
 `;
+export const A = styling.a`
+text-decoration:none;`;

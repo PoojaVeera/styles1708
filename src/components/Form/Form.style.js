@@ -5,9 +5,9 @@ top:15%;
 right:30%;
 left:65%;
 height:70%;
-width:30%;
+width:27%;
 box-sizing: border-box;
-background-color:red;
+line-height:1.5;
 `;
 export const SIN = styling.div`
 color:#001737;

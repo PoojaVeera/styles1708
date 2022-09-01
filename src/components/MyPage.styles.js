@@ -31,7 +31,6 @@ width:45%;
 top:15%;
 left:10%;
 vertical-align: middle;
-background-color:blue;
 @media ${devices.desktop} {
     Immg{
         max-width: 1500px;

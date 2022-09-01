@@ -1,22 +1,22 @@
 import React from "react";
-import { FOOT, SUBFOOT1, SUBFOOT2 } from "./Footer.styles";
+import { FOOT, SUBFOOT1, SUBFOOT2, A } from "./Footer.styles";
 export const Footer = () => {
   return (
     <FOOT>
       <SUBFOOT1>
         <nav>
-          <a href="https://themeforest.net/licenses/standard">Licenses</a>
+          <A href="https://themeforest.net/licenses/standard">Licenses</A>
           &emsp;&emsp;
-          <a href="https://doar-react.netlify.app/">change log</a>&emsp;&emsp;
-          <a href="https://hasthemes.com/contact-us/">get help</a>&emsp;&emsp;
+          <A href="https://doar-react.netlify.app/">change log</A>&emsp;&emsp;
+          <A href="https://hasthemes.com/contact-us/">get help</A>&emsp;&emsp;
         </nav>
       </SUBFOOT1>
       <SUBFOOT2 className="subfoot2">
         <p>
-          @DOAR 2022 MADE WITH BY{" "}
-          <a href="https://themeforest.net/user/bootxperts/portfolio">
+          @DOAR 2022 MADE WITH BY
+          <A href="https://themeforest.net/user/bootxperts/portfolio">
             BOOTEXPERTS
-          </a>
+          </A>
         </p>
       </SUBFOOT2>
     </FOOT>
