@@ -34,7 +34,7 @@ text-align:left`;
 export const EMAIL = styling.div` 
 display: inline-block;`;
 
-export const INBOX = styling.input`
+export const INBOXpass = styling.input`
 display: block;
 width: 90%;
 height: 15px;
@@ -50,6 +50,23 @@ border: 1px solid rgb(192, 204, 218);
 border-radius: 2px;
 transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s
 `;
+export const INBOXmail = styling.input`
+display: block;
+width: 90%;
+height: 15px;
+padding: 0.46875rem 0.625rem;
+font-size: 0.875rem;
+font-family: sans-serif;
+font-weight: 400;
+line-height: 1.5;
+color: rgb(27, 46, 75);
+background-color: rgb(255, 255, 255);
+background-clip: padding-box;
+border: 1px solid rgb(192, 204, 218);
+border-radius: 2px;
+transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s
+`;
+
 export const PASSWORD = styling.div`
 line-height: 1.5;
 font-family: "IBM Plex Sans", sans-serif;
