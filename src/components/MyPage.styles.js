@@ -25,15 +25,26 @@ export const devices = {
 // color: rgb(1, 104, 250)`;
 
 export const Immg = styling.img`
-position:fixed;
-height:70%;
-width:45%;
-top:15%;
-left:10%;
-vertical-align: middle;
+height:450px;
+width:600px;
+
 @media ${devices.desktop} {
     Immg{
         max-width: 1500px;
         display:none;}
     
 }`;
+export const ImageSec = styling.div`
+display:flex;
+flex-direction:column;
+position:fixed;
+top:10%;
+left:5%;
+bottom:15%;
+font-size:small;
+text-align:left;
+
+`;
+export const A = styling.a`
+text-decoration:none;
+color:rgb(1, 104, 250)`;

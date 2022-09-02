@@ -7,37 +7,36 @@ left:0;
 align-items: center;
 height: 10%;
 display:flex;
-padding: 0px;
-justify-content: flex-start;
+justify-content:space-between;
 box-sizing:border-box;  
 border-bottom: 1px solid rgba(72, 94, 144, 0.16);
 vertical-align: middle;
 `;
+export const DOAR = styling.div`
+font-weight: 700;
+font-size: 22px;
+letter-spacing: -1px;
+display: flex;
+padding:20px;
+align-items: center;
+position: relative;
+color: rgb(3, 26, 97);
+margin-top: -4px;
+`;
 export const UL = styling.ul`
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-position:fixed;
-width:100%;`;
+list-style-type: none`;
+
 export const LI = styling.li`
 display:inline-block;
 padding:10px;
-text-align:center;
-float:left;`;
+`;
 export const NAVBAR = styling.nav`
+color: rgb(0, 23, 55);`;
+export const ICON = styling.div`
+padding:8px;
 
 `;
 export const ICONS = styling.div`
-
-padding:10px;
+display:flex;
+padding:20px;
 `;
-export const DOAR = styling.div`;
-    font-weight: 300;
-   letter-spacing: -1px;
-   position:fixed;
-  color: rgb(3, 26, 97);
-  left:2%;
-  top:0%;
-  padding:5px;
-  `;
