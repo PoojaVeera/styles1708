@@ -1,4 +1,4 @@
-import { HEAD, DOAR, ICON, NAVBAR, UL, LI, ICONS } from "./Header.style";
+import { HEAD, Do, Ar, ICON, NAVBAR, UL, LI, ICONS } from "./Header.style";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsChatLeft } from "react-icons/bs";
 import { BiBell } from "react-icons/bi";
@@ -8,7 +8,10 @@ import React from "react";
 export const Header = () => {
   return (
     <HEAD>
-      <DOAR>doar</DOAR>
+      <Do>
+        do
+        <Ar>ar</Ar>
+      </Do>
       <NAVBAR>
         <UL>
           <LI>Dashboard</LI>

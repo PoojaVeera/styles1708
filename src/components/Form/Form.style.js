@@ -1,132 +1,116 @@
 import styling from "styled-components";
-export const FORM1 = styling.div`
-position:fixed;
-top:15%;
-right:30%;
-left:65%;
-height:70%;
-width:27%;
-box-sizing: border-box;
-line-height:1.5;
+
+export const FORM = styling.div`
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+width:30%;
+line-height:2.0;
+text-align:left;
+font-family:"IBM Plex Sans", sans-serif;
+font-size:small;
+margin:0px;
+height:100%;
 `;
+
 export const SIN = styling.div`
 color:#001737;
-margin: 0px 0px 5px;
-font-size:15px;
-font-family: "IBM Plex Sans", sans-serif;
-text-align:left;
-`;
+font-size:24px;
+display:inline;
+margin:0px 0px 0px;
+padding:0px`;
+
 export const WELCOME = styling.div`
-font-size: 15px;
-text-align:left;
+font-size: 16px;
 color: #8392A5;
-margin: 0px 0px 10px;
-font-family: "IBM Plex Sans", sans-serif;
+margin:0px 0px 0px;
+padding:0px;
 `;
-export const FORM = styling.div`  
-height:50%
-width:20%;
-`;
-export const Mailbox = styling.div`
-margin-bottom: 5px;
-text-align:left`;
 
-export const EMAIL = styling.div` 
-display: inline-block;`;
-
-export const INBOXpass = styling.input`
+export const INBOX = styling.input`
 display: block;
-width: 90%;
+width: 95%;
 height: 15px;
-padding: 0.46875rem 0.625rem;
-font-size: 0.875rem;
-font-family: sans-serif;
-font-weight: 400;
 line-height: 1.5;
+padding:7px 15px;
 color: rgb(27, 46, 75);
 background-color: rgb(255, 255, 255);
 background-clip: padding-box;
 border: 1px solid rgb(192, 204, 218);
-border-radius: 2px;
-transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s
-`;
-export const INBOXmail = styling.input`
-display: block;
-width: 90%;
-height: 15px;
-padding: 0.46875rem 0.625rem;
-font-size: 0.875rem;
-font-family: sans-serif;
-font-weight: 400;
-line-height: 1.5;
-color: rgb(27, 46, 75);
-background-color: rgb(255, 255, 255);
-background-clip: padding-box;
-border: 1px solid rgb(192, 204, 218);
-border-radius: 2px;
-transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s
+border-radius: 5px;
 `;
 
 export const PASSWORD = styling.div`
 line-height: 1.5;
-font-family: "IBM Plex Sans", sans-serif;
-font-weight: 400;
 color: rgb(0, 23, 55);
-font-size: 0.875rem
+display:flex;
+justify-content:space-between;
 `;
-export const ButtonG = styling.div`
-align-items: center;
-justify-content: center;
-font-weight: 400;
-text-align: center;
-vertical-align: middle;
-cursor: pointer;
-line-height: 1.0;
-user-select: none;
-border: 1px solid rgb(0, 167, 230);
-transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-background: transparent;
-color: rgb(0, 167, 230);
-padding: 0.46875rem 0.9375rem;
-font-size: 0.875rem;
-display: block;
-width: 90%;
-border-radius: 0.25rem;
-margin-top: 0.5rem;;
- `;
-export const BUTTONF = styling.div`
-align-items: center;
-justify-content: center;
-font-weight: 400;
-text-align: center;
-vertical-align: middle;
-cursor: pointer;
-line-height: 1.0;
-user-select: none;
-border: 1px solid rgb(64, 100, 172);
-transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-background: transparent;
-color: rgb(64, 100, 172);
-padding: 0.46875rem 0.9375rem;
-font-size: 0.875rem;
-display: block;
-width: 90%;
-border-radius: 0.25rem;`;
+
 export const BUTTONSI = styling.div`
+display: block;
 align-items: center;
 justify-content: center;
-font-weight: 400;
 text-align: center;
-vertical-align: middle;
-cursor: pointer;
 line-height: 1.5;
-user-select: none;
 border: 1px solid rgb(4, 40, 147);
-transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 color: rgb(255, 255, 255);
 background-color: rgb(4, 40, 147);
-padding: 0.46875rem 0.9375rem;
-font-size: 0.875rem;
+padding: 7px 15px;
+width: 95%;
+background-clip: border-box;
+border-radius: 4px;
+margin-top:8px`;
+
+export const ButtonT = styling.div`
 display: block;
-width: 90%;
-border-radius: 0.25rem;`;
+align-items: center;
+justify-content: center;
+text-align: center;
+line-height: 1.5;
+border: 1px solid rgb(0, 167, 230);
+background: transparent;
+color: rgb(0, 167, 230);
+padding: 7px 15px;
+width: 95%;
+border-radius:4px;
+margin-top: 8px;
+background-clip: border-box;
+ `;
+export const BUTTONF = styling.div`
+display: block;
+align-items: center;
+justify-content: center;
+text-align: center;
+line-height: 1.5;
+border: 1px solid rgb(64, 100, 172);
+background: transparent;
+color: rgb(64, 100, 172);
+padding: 7px 15px;
+width: 95%;
+border-radius: 4px;
+background-clip: border-box;
+`;
+
+export const P = styling.p`
+display:flex;
+width:100%;
+justify-content:center;
+`;
+export const LINE = styling.div`
+display: block;
+flex: 1 1 0%;
+height: 1px;
+background-color: rgb(229, 233, 242);
+margin: 10px;  
+`;
+export const OR = styling.div`
+position: relative;
+display: flex;
+align-items: center;
+color: rgb(131, 146, 165);
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 0.5px;
+margin: 15px 0px;
+`;

@@ -1,16 +1,17 @@
 import React from "react";
+import { A } from "../MyPage.styles";
 import {
-  FORM1,
+  LINE,
+  OR,
   SIN,
   WELCOME,
   FORM,
-  Mailbox,
-  INBOXmail,
-  INBOXpass,
+  INBOX,
   PASSWORD,
   BUTTONSI,
-  ButtonG,
+  ButtonT,
   BUTTONF,
+  P,
 } from "./Form.style.js";
 import { useFormik } from "formik";
 export const Form = () => {
@@ -41,60 +42,52 @@ export const Form = () => {
     },
   });
   return (
-    <FORM1>
-      <SIN>
-        <h3>SIGN IN</h3>
-        <WELCOME>
-          <p>Welcome back please sign in </p>
-          <br></br>
-          <FORM>
-            <form>
-              <Mailbox>
-                <label>Email address</label>
-                <INBOXmail
-                  type="email"
-                  name="email"
-                  placeholder="yourname@yourmail.com"
-                  values={frmk.values.email}
-                  onChange={frmk.handleChange}
-                />
-              </Mailbox>
-              {frmk.errors.email ? (
-                <div className="email">{frmk.errors.email}</div>
-              ) : null}
-              <PASSWORD>
-                Password
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                <a href="https://doar-react.netlify.app/signin">
-                  Forgot password?
-                </a>
-              </PASSWORD>
-              <INBOXpass
-                type="password"
-                placeholder="enter your password"
-                name="password"
-                values={frmk.values.password}
-                onChange={frmk.handleChange}
-              />
-              <br></br>
-              {frmk.errors.password ? (
-                <div className="password">{frmk.errors.password}</div>
-              ) : null}
-            </form>
-            <BUTTONSI>SIGN IN</BUTTONSI>
-            --------------------------------0R--------------------------------
-            <br />
-            <BUTTONF>Sign in with Facebook</BUTTONF>
-            <ButtonG>Sign in with Twitter</ButtonG>
-            <p>
-              Don't have an account? &emsp;{" "}
-              <a href="https://doar-react.netlify.app/signin">
-                create a account
-              </a>
-            </p>
-          </FORM>
-        </WELCOME>
-      </SIN>
-    </FORM1>
+    <FORM>
+      <SIN>Sign In</SIN>
+      <WELCOME>Welcome back! please sign in to continue</WELCOME>
+      <br></br>
+      <form>
+        <label htmlFor="email">Email address</label>
+        <INBOX
+          type="email"
+          name="email"
+          placeholder="yourname@yourmail.com"
+          values={frmk.values.email}
+          onChange={frmk.handleChange}
+        />
+        <br></br>
+        {frmk.errors.email ? (
+          <div className="email">{frmk.errors.email}</div>
+        ) : null}
+        <PASSWORD htmlFor="password">
+          Password
+          <a href="https://doar-react.netlify.app/signin">Forgot password?</a>
+        </PASSWORD>
+        <INBOX
+          type="password"
+          placeholder="enter your password"
+          name="password"
+          values={frmk.values.password}
+          onChange={frmk.handleChange}
+        />
+        <br></br>
+        {frmk.errors.password ? (
+          <div className="password">{frmk.errors.password}</div>
+        ) : null}
+        <BUTTONSI type="submit">Sign In</BUTTONSI>
+        <OR>
+          <LINE />
+          OR
+          <LINE />
+        </OR>
+        <BUTTONF type="submit">Sign in with Facebook</BUTTONF>
+        <ButtonT type="submit">Sign in with Twitter</ButtonT>
+      </form>
+
+      <P>
+        Don't have an account?
+        <A href="https://doar-react.netlify.app/signin">Create an Account</A>
+      </P>
+    </FORM>
   );
 };
